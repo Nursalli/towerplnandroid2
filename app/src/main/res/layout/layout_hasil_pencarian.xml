@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBF7F7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_logo_launcher_round"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/hasil_pencarian_tower"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/span_kumulatif_2"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#2196F3"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/hasil_span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/span_kumulatif"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#2196F3"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/riwayat_catatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/ic_background_riwayat"
+                android:text="Riwayat Catatan"
+                android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Tower"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Longitude"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type Tower"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jarak (SPAN)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type (INSULATOR)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jml String L1 (INSULATOR PHASA)"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml String L2 (INSULATOR PHASA)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg/String L1 (INSULATOR PHASA)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg/String L2 (INSULATOR PHASA)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg (INSULATOR PHASA)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml String L1 (INSULATOR SUPPORT)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml String L2 (INSULATOR SUPPORT)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg/String L1 (INSULATOR SUPPORT)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg/String L2 (INSULATOR SUPPORT)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg (INSULATOR SUPPORT)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jml Kpg (INSULATOR PHASA &amp; SUPPORT)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumper (CONDUCTOR)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Armor Roud (CONDUCTOR)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Damper (CONDUCTOR)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spacer (CONDUCTOR)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Damper (GSW)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GSW ke Body (GSW)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GSW dr EW ke Grounding (GSW)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desa (Lokasi Tower)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kecamatan (Lokasi Tower)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KAB/KOTA (Lokasi Tower)"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi Tower"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="28dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nomor_tower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Tower"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Longitude"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/type_tower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aa2+6"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jarak_span"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="350.00 m"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/type_insulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SS"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_string_l1_insulator_phasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_string_l2_insulator_phasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_string_l1_insulator_phasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_string_l2_insulator_phasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_insulator_phasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="72"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_string_l1_insulator_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_string_l2_insulator_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_string_l1_insulator_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_string_l2_insulator_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_insulator_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jml_kpg_insulator_phasa_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="72"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/jumper_conductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/armor_roud_conductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/damper_conductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/spacer_conductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-6"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/damper_gsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/gsw_ke_body_gsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/gsw_dr_ew_ke_grounding_gsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/desa_lokasi_tower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wawotobi"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/kecamatan_lokasi_tower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wawotobi"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/kab_kota_lokasi_tower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Konawe"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/posisi_tower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/catatan"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_background_input"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:hint="Masukkan Catatan"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_background_submit"
+            android:textColor="#fff"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBF7F7"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

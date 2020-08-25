@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF7F7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_logo_launcher_round"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:padding="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/daftar_catatan"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/span_kumulatif_2"
+                    android:textColor="#2196F3"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/hasil_span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/span_kumulatif"
+                    android:textColor="#2196F3"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/nomor_tower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/nomor_tower"
+                        android:textColor="#2196F3"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/hasil_nomor_tower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="#2196F3"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/ic_background_submit"
+                android:layout_below="@id/header"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal:"
+                        android:textColor="#FFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/isi_tanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25-07-2020"
+                        android:textColor="#FFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/oleh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oleh:"
+                        android:textColor="#FFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/isi_oleh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dije Ajah"
+                        android:textColor="#FFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Catatan:"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/isi_catatan"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Isi Catatan"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

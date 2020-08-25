@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Found Tower</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="nav_header_nama">Nama:</string>
+    <string name="nav_header_nama_isi">Djaja Suharjana Ode</string>
+    <string name="nav_header_nip">NIP:</string>
+    <string name="nav_header_nip_isi">11133452728</string>
+    <string name="nav_header_jabatan">Jabatan:</string>
+    <string name="nav_header_jabatan_isi">Manager PLN</string>
+    <string name="nav_header_area_kerja">Area Kerja:</string>
+    <string name="nav_header_area_kerja_isi">Sulawesi Tenggara</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="span_kumulatif">SPAN Kumulatif</string>
+    <string name="span_kumulatif_2">SPAN Kumulatif:</string>
+    <string name="area">Area</string>
+    <string name="login">Login</string>
+    <string name="hasil_pencarian_tower">Hasil Pencarian Tower</string>
+    <string name="catatan">Catatan:</string>
+
+    <string name="menu_edit_profile">Edit Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="submit">Submit</string>
+    <string name="masukkan_username">Masukkan Username</string>
+
+    <string name="daftar_catatan">Daftar Catatan</string>
+    <string name="nomor_tower">Nomor Tower:</string>
+</resources>
